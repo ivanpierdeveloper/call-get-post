@@ -270,10 +270,10 @@
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: left center;
+    transition: 2s;
 }
 .btn-p:hover {
     background-color: var(--success);
-    transition: 2s;
 }
 /* BUTTON */
 
