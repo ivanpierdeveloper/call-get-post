@@ -38,7 +38,12 @@ const myFunc = {
   controlloAndSend : function() {
    var inputElement =  document.querySelectorAll('.input-text');
    inputElement.forEach(function(val, indice) {
-    console.log(` Valore : ${val.value} Indice : ${indice}`);
+     if(val.value == "") {
+       $(`.span-${indice}`).css({
+        'display' : 'block'
+       });
+       break;
+     }
    });
     
   }
