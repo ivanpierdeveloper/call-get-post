@@ -253,6 +253,8 @@
     border-radius: 8px;
     width: 150px;
     height: 30px;
+    font-family: Arial, Helvetica, sans-serif monospace;
+    font-variant: small-caps;
 }
 .btn-p {
     border: 1px solid var(--yellow);
