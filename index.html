@@ -41,11 +41,11 @@
         transform: translate(-50%, -50%);
         box-shadow: 0 3px 17px var(--secondary);
         border-radius: 8px;
-        border: 1px solid var(--orange);
+        border: 1px solid;
         padding: 18px;
         text-align: center;
         /*background-color: var(--dark);*/
-        color: var(--yellow);
+        /*color: var(--yellow);*/
         z-index: 2;
       }
       .img-close {
@@ -71,7 +71,7 @@
       <div class="img-close crs-pointer">
         <img src="img/close.png" width="25" height="25" />
       </div>
-      <h5>Messaggio</h5>
+      <h5>avviso</h5>
       <hr />
       <span class="my-alert-testo"></span>
     </div>
@@ -86,7 +86,7 @@
           <label for="usr">username</label>
           <label for="psw">password</label>
         </form>
-        <button class="btn btn-p crs-pointer" onclick="javascript:myFunc.showAlert('Message from button', 'var(--dark)');">mostra alert</button>
+        <button class="btn btn-p crs-pointer" onclick="javascript:myFunc.showAlert('Message from button', 'var(--dark)', 'var(--yellow)', 'var(--giallo)');">mostra alert</button>
       </div>
     </div>
      <!-- lib google ajax -->

@@ -7,16 +7,18 @@ const myFunc = {
     let spanalert = document.querySelector('.my-alert-testo');
     spanalert.innerHTML = testo;
   },
-  showAlert : function(data, cl) {
+  showAlert : function(testo, sfondo, testocl, bordo) {
     $('.full-screen').css({
       'display' : 'block'
     });
     $('.my-alert').css({
-        'background-color' : cl,
+        'background-color' : sfondo,
+        'color' : testocl,
+        'border-color' : bordo,
         'top' : '50%',
         'transition' : '2s'
     });
-    myFunc.messaggioMyAlert(data);
+    myFunc.messaggioMyAlert(testo);
   },
   closeMyAlert : function() {
     $('.full-screen').css({
