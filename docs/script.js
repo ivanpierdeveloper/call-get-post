@@ -33,7 +33,7 @@ const myFunc = {
       'top' : '-50%',
       'transition' : '2s'
     });
-    document.querySelector('.frm-index').addEventListener('submit');
+    document.querySelector('.frm-index').submit();
   },
   controlloAndASend : function() {
     
