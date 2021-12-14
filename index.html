@@ -57,7 +57,10 @@
     </style>
   </head>
   <body>
+    <!-- full screen-->
     <div class="full-screen"></div>
+    <!-- full screen-->
+    <!-- my alert -->
     <div class="my-alert">
       <div class="img-close crs-pointer">
         <img src="img/close.png" width="25" height="25" />
@@ -66,11 +69,17 @@
       <hr />
       <span class="my-alert-testo"></span>
     </div>
+    <!-- my alert -->
     <div class="container">
       <h1 class="root-text-color-orange">WelCome Get And Post Testing</h1>
       <hr />
       <div class="stampa"></div>
       <div class="content">
+        <h5>Form da inviare</h5>
+        <form id="frm_index" name="frm_index" class="frm-index">
+          <label for="usr">username</label>
+          <label for="psw">password</label>
+        </form>
         <button class="btn btn-p crs-pointer" onclick="javascript:myFunc.showAlert('Message from button');">mostra alert</button>
       </div>
     </div>
