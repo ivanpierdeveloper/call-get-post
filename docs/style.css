@@ -260,7 +260,7 @@
     height: 30px;
     font-family: Arial, Helvetica, monospace, sans-serif;
     font-variant: small-caps;
-    margin: 5px;
+    margin-top: 5px;
 }
 .btn-p {
     border: 1px solid var(--yellow);
