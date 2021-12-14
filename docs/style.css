@@ -262,3 +262,9 @@
     color: var(--light);
 }
 /* BUTTON */
+
+/* BODY */ 
+body {
+    background-color: var(--secondary);
+}
+/* BODY */
