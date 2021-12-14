@@ -291,7 +291,7 @@ body {
 /* BODY */
 /* INPUT TYPE */
 input[type=text], input[type=password], input[type=url] {
-    display: block;
+    /* display: block; */
     width: 96%;
     height: 30px;
     border: 1px solid var(--secondary);
