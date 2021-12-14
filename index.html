@@ -79,27 +79,6 @@
     <script src="docs/script.js"></script>
     <script lang="javascript">
       document.querySelector('.img-close').addEventListener('click', closeMyAlert);
-       function showAlert(data) {
-          $('.full-screen').css({
-            'display' : 'block'
-          });
-          $('.my-alert').css({
-              'position' : 'fixed',
-              'top' : '50%',
-              'transition' : '2s'
-          });
-          myFunc.messaggioMyAlert(data);
-        }
-      function closeMyAlert() {
-        $('.full-screen').css({
-          'display' : 'none'
-        });
-        $('.my-alert').css({
-          'position' : 'fixed',
-          'top' : '-50%',
-          'transition' : '2s'
-        });
-      }
     </script>
   </body>
 </html>
