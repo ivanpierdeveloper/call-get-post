@@ -86,8 +86,8 @@ async function senddata(url) {
   'use strict'
   try {
     const formData = new FormData();
-    formData.append("id","1");
-    const request = new Request("http://svilfi.utile.extranet.utilita.com/webserver/php/test/fetch/js.php", {
+    formData.append("id",1);
+    const request = new Request(url, {
       method = 'POST',
       body: formData
     });
@@ -96,7 +96,7 @@ async function senddata(url) {
       if(response.ok) {
         return Promise.resolve(response.json());
       } else {
-        return Promise.rejecy({
+        return Promise.reject({
           status: response.status,
           statusText: response.statusText
         })
