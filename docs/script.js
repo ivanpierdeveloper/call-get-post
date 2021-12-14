@@ -7,12 +7,12 @@ const myFunc = {
     let spanalert = document.querySelector('.my-alert-testo');
     spanalert.innerHTML = testo;
   },
-  showAlert : function(data) {
+  showAlert : function(data, cl) {
     $('.full-screen').css({
       'display' : 'block'
     });
     $('.my-alert').css({
-        'position' : 'fixed',
+        'background-color' : cl,
         'top' : '50%',
         'transition' : '2s'
     });
