@@ -37,14 +37,24 @@ const myFunc = {
   // controllo form
   controlloAndSend : function() {
    var inputElement =  document.querySelectorAll('.input-text');
+   let num = false;
    inputElement.forEach(function(val, indice) {
      if(val.value == "") {
        $(`.span-${indice}`).css({
         'display' : 'block'
        });
-       console.table(val.value);
+       num = true;
+     } else {
+      $(`.span-${indice}`).css({
+        'display' : 'none'
+       });
+       num = false;
      }
-   });
-    
+   }); // end forEach
+    if(num == false) {
+      console.table("Send");
+    } else {
+      console.error("Errore");
+    }
   }
 } // end const myFunc
