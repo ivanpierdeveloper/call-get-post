@@ -83,7 +83,6 @@ const myFunc = {
   }
 } // end const myFunc
 async function senddata(url) {
-  'use strict'
   try {
     const formData = new FormData();
     formData.append("id",1);
