@@ -275,3 +275,10 @@ body {
     font-variant: small-caps;
 }
 /* BODY */
+/* INPUT TYPE */
+input[type=text] {
+    display: block;
+    width: 98%;
+    border: 1px solid var(--secondary);
+}
+/* INPUT TYPE */
