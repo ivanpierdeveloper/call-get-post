@@ -266,11 +266,11 @@
     font-variant: small-caps;
     margin-top: 5px;
 }
-.btn-p:hover {
-    background-color: var(--primary);
+.btn-s:hover {
+    background-color: var(--success);
 }
 
-.btn-p {
+.btn-s {
     transition: 2s;
     border: 1px solid var(--yellow);
     background-color: transparent;
