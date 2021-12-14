@@ -85,11 +85,13 @@
         <form id="frm_index" name="frm_index" class="frm-index">
           <label for="url" class="root-text-color-cyan">url</label>
           <input type="url" id="url" name="url" class="input-text" placeholder="url" required>
-          <span class="root-text-color-danger el-align-right">*</span>
+          <span class="root-text-color-danger" id="span_url">campo obbligatorio</span>
           <label for="usr" class="root-text-color-cyan">username</label>
           <input type="text" id="usr" name="usr" class="input-text" placeholder="username" required>
+          <span class="root-text-color-danger" id="span_usr">campo obbligatorio</span>
           <label for="psw" class="root-text-color-cyan">password</label>
           <input type="password" id="psw" name="psw" class="input-text" placeholder="password">
+          <span class="root-text-color-danger" id="span_psw">campo obbligatorio</span>
           <button class="btn btn-p crs-pointer btn-send-form">mostra alert</button>
         </form>
       </div>
