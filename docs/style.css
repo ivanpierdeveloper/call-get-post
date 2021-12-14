@@ -280,7 +280,7 @@ body {
 }
 /* BODY */
 /* INPUT TYPE */
-input[type=text] {
+input[type=text], input[type=password] {
     display: block;
     width: 98%;
     height: 5hv;
