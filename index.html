@@ -81,19 +81,24 @@
       <hr />
       <div class="stampa"></div>
       <div class="content">
-        <h3 class="root-text-align-center root-text-color-cyan">Form da inviare</h3>
+        <h3 class="root-text-align-center root-text-color-cyan">form da inviare</h3>
         <form id="frm_index" name="frm_index" class="frm-index">
-          <label for="usr">username</label>
-          <label for="psw">password</label>
+          <label for="usr" class="root-text-color-cyan">username</label>
+          <input type="text" id="usr" name="usr" class="input-text" placeholder="username" required>
+          <label for="psw" class="root-text-color-cyan">password</label>
+          <input type="password" id="psw" name="psw" class="input-text" placeholder="password">
+          <button class="btn btn-p crs-pointer" onclick="javascript:myFunc.showAlert('Message from button', 'var(--dark)', 'var(--yellow)', 'var(--giallo)');">mostra alert</button>
         </form>
-        <button class="btn btn-p crs-pointer" onclick="javascript:myFunc.showAlert('Message from button', 'var(--dark)', 'var(--yellow)', 'var(--giallo)');">mostra alert</button>
       </div>
     </div>
      <!-- lib google ajax -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="docs/script.js"></script>
     <script lang="javascript">
-      document.querySelector('.img-close').addEventListener('click', myFunc.closeMyAlert);
+      document.querySelector('.img-close').addEventListener('click', (e) => {
+        e.preventDefault();
+        myFun.closeMyAlert();
+      });
     </script>
   </body>
 </html>
