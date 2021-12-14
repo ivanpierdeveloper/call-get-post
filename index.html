@@ -70,15 +70,16 @@
       <h1 class="root-text-color-orange">WelCome Get And Post Testing</h1>
       <hr />
       <div class="stampa"></div>
+      <div class="content">
+        <button class="btn btn-p" onclick="javascript:showAlert();">Show alert</button>
+      </div>
     </div>
      <!-- lib google ajax -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="docs/script.js"></script>
     <script lang="javascript">
       document.querySelector('.img-close').addEventListener('click', closeMyAlert);
-      $( (e) => {
-        setTimeout(function() {
-          // myFunc.messageToBack();
+       function showAlert() {
           $('.full-screen').css({
             'display' : 'block'
           });
@@ -88,8 +89,7 @@
               'transition' : '2s'
           });
           myFunc.messaggioMyAlert("Welcome to back my alert");
-        }, 3000);
-      });
+        }
       function closeMyAlert() {
         $('.full-screen').css({
           'display' : 'none'
