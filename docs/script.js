@@ -55,15 +55,15 @@ const myFunc = {
       // controllo url
       var expression = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
       var regex = new RegExp(expression);
-      var t = inputElement[0].value;
-      if (t.match(regex)) {
+      var valUrl = inputElement[0].value;
+      if (valUrl.match(regex)) {
         // controllo email
         console.table("Send");
       } else {
         $(`.span-0`).css({
           'display' : 'block'
-         }).html("Url non corretto!!!");
-         console.error("Url non corretto!!!");
+         }).html("url non corretto!!!");
+         console.error("url non corretto!!!");
          return;
       }
     } else {
