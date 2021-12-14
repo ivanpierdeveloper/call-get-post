@@ -36,6 +36,6 @@ const myFunc = {
     document.querySelector('.frm-index').addEventListener('submit');
   },
   controlloAndASend : function() {
-    let frm = 
+    
   }
 } // end const myFunc
