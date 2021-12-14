@@ -291,7 +291,7 @@ body {
 /* BODY */
 /* INPUT TYPE */
 input[type=text], input[type=password], input[type=url] {
-    /* display: block; */
+    display: block;
     width: auto;
     height: 30px;
     border: 1px solid var(--secondary);
@@ -305,7 +305,7 @@ input[type=text], input[type=password], input[type=url] {
 /* INPUT TYPE */
 /* SPAN */
 form span {
-    /*display: block;*/
+    display: block;
     position: fixed;
     right: 5%;
     display: none;
