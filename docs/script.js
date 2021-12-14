@@ -53,7 +53,7 @@ const myFunc = {
     if(num == false) {
       console.table("Send");
     } else {
-      console.error("Errore");
+      console.error("Errore: Non hai compilato tutti i campi obbligatori|||");
     }
   }
 } // end const myFunc
