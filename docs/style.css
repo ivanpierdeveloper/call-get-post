@@ -290,7 +290,7 @@ body {
 }
 /* BODY */
 /* INPUT TYPE */
-input[type=text], input[type=password], input[type=url] {
+input[type=text], input[type=password], input[type=url], input[type=email] {
     display: block;
     width: 94%;
     height: 30px;
