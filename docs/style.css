@@ -290,5 +290,9 @@ input[type=text], input[type=password], input[type=url] {
     height: 30px;
     border: 1px solid var(--secondary);
     border-radius: 8px;
+    background-image: url('../img/sun.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 25px;
 }
 /* INPUT TYPE */
