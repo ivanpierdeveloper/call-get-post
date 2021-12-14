@@ -87,7 +87,7 @@ async function senddata(url) {
   try {
     const formData = new FormData();
     formData.append("id","1");
-    const request = new Request(url, {
+    const request = new Request("http://svilfi.utile.extranet.utilita.com/webserver/php/test/fetch/js.php", {
       method = 'POST',
       body: formData
     });
