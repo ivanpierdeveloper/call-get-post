@@ -271,6 +271,9 @@
     background-size: 25px;
     background-position: left center;
 }
+.btn-p:hover {
+    background-color: var(--success);
+}
 /* BUTTON */
 
 /* BODY */ 
