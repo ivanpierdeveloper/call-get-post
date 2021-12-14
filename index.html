@@ -71,7 +71,7 @@
       <hr />
       <div class="stampa"></div>
       <div class="content">
-        <button class="btn btn-p crs-pointer" onclick="javascript:showAlert();">mostra alert</button>
+        <button class="btn btn-p crs-pointer" onclick="javascript:showAlert('BUTTON');">mostra alert</button>
       </div>
     </div>
      <!-- lib google ajax -->
@@ -79,7 +79,7 @@
     <script src="docs/script.js"></script>
     <script lang="javascript">
       document.querySelector('.img-close').addEventListener('click', closeMyAlert);
-       function showAlert() {
+       function showAlert(data) {
           $('.full-screen').css({
             'display' : 'block'
           });
@@ -88,7 +88,7 @@
               'top' : '50%',
               'transition' : '2s'
           });
-          myFunc.messaggioMyAlert("Welcome to back my alert");
+          myFunc.messaggioMyAlert(data);
         }
       function closeMyAlert() {
         $('.full-screen').css({
