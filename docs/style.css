@@ -283,6 +283,8 @@ body {
 input[type=text] {
     display: block;
     width: 98%;
+    height: 5hv;
     border: 1px solid var(--secondary);
+    border-radius: 4px;
 }
 /* INPUT TYPE */
