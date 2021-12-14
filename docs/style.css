@@ -292,7 +292,7 @@ body {
 /* INPUT TYPE */
 input[type=text], input[type=password], input[type=url] {
     display: block;
-    width: 98%;
+    width: 94%;
     height: 30px;
     border: 1px solid var(--secondary);
     border-radius: 8px;
