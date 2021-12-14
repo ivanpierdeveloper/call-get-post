@@ -265,6 +265,10 @@
     border: 1px solid var(--yellow);
     background-color: var(--primary);
     color: var(--light);
+    background-image: url('../img/sun.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: left center;
 }
 /* BUTTON */
 
