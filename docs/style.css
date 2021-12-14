@@ -283,7 +283,7 @@ body {
 input[type=text], input[type=password] {
     display: block;
     width: 98%;
-    height: 5hv;
+    height: 5vh;
     border: 1px solid var(--secondary);
     border-radius: 4px;
 }
