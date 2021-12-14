@@ -307,6 +307,6 @@ input[type=text], input[type=password], input[type=url] {
 span {
     display: block;
     position: fixed;
-    right: 0;
+    right: 50px;
 }
 /* SPAN */
