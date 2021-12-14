@@ -40,6 +40,14 @@
         height: 25vh;
         position: fixed; left: 50%; top: -50%;
         transform: translate(-50%, -50%);
+        box-shadow: 0 3px 17px var(--secondary);
+        border-radius: 8px;
+        border: 1px solid var(--orange);
+        padding: 18px;
+        text-align: center;
+        background-color: var(--dark);
+        color: var(--yellow);
+        z-index: 2;
       }
     </style>
   </head>
@@ -60,7 +68,12 @@
           myFunc.messageToBack();
           $('.full-screen').css({
             'display' : 'block'
-          })
+          });
+          $('.my-alert').css({
+              'position' : 'fixed',
+              'top' : '50%',
+              'transition' : '2s'
+          });
         }, 3000);
       });
     </script>
