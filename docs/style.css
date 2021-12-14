@@ -248,3 +248,18 @@
 
 
 /* ELEMENTI LEFT RIGHT */
+/* BUTTON */
+.btn {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 8px;
+    font-variant: small-caps;
+    font-family: monospace sans-serif;
+    width: 150px;
+    height: 30px;
+}
+.btn-p {
+    background-color: var(--primary);
+    color: var(--light);
+}
+/* BUTTON */
