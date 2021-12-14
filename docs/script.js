@@ -83,12 +83,13 @@ const myFunc = {
   }
 } // end const myFunc
 async function senddata(url) {
+  'use strict'
   try {
     const formData = new FormData();
     formData.append("id",1);
     formData.append("usr","utente Get And Post");
     const request = new Request(url, {
-      method = 'POST',
+      method: 'POST',
       body: formData
     });
     await fetch(request)
