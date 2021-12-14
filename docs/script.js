@@ -37,8 +37,8 @@ const myFunc = {
   // controllo form
   controlloAndASend : function() {
    const frm =  document.querySelector('.frm-index');
-   frm.forEach(function(val, indice) {
-     console.table(val)
+   form.forEach(function(val, indice) {
+     console.table(val);
    });
   }
 } // end const myFunc
