@@ -85,13 +85,15 @@
         <h3 class="root-text-align-center root-text-color-cyan">form da inviare</h3>
         <form id="frm_index" name="frm_index" class="frm-index" method="POST" enctype="multipart/form-data">
           <label for="url" class="root-text-color-cyan">url</label>
-          <input type="url" id="url" name="url" class="input-text" placeholder="url" required>
+          <input type="url" id="url" name="url" class="input-text" placeholder="Url" required>
           <span class="root-text-color-danger" id="span_url">campo obbligatorio</span>
+          <input type="email" id="email" name="email" class="input-text" placeholder="Email" required>
+          <span class="root-text-color-danger" id="span_email">campo obbligatorio</span>
           <label for="usr" class="root-text-color-cyan">username</label>
-          <input type="text" id="usr" name="usr" class="input-text" placeholder="username" required>
+          <input type="text" id="usr" name="usr" class="input-text" placeholder="Username" required>
           <span class="root-text-color-danger" id="span_usr">campo obbligatorio</span>
           <label for="psw" class="root-text-color-cyan">password</label>
-          <input type="password" id="psw" name="psw" class="input-text" placeholder="password">
+          <input type="password" id="psw" name="psw" class="input-text" placeholder="Password">
           <span class="root-text-color-danger" id="span_psw">campo obbligatorio</span>
           <button class="btn btn-s crs-pointer btn-send-form">invia dati</button>
         </form>
