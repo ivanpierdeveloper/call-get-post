@@ -62,21 +62,19 @@ const myFunc = {
         var regexEmail = new RegExp(expressionEmail);
         var valEmail = inputElement[1].value;
         if (valEmail.match(regexEmail)) {
-          console.log("Send form");
+          senddata(valUrl);
         } else {
           // error email
           $(`.span-1`).css({
             'display' : 'block'
-            }).html("email non corretto!!!");
-            console.error("email non corretto!!!");
+            }).html("email non corretta");
             return;
         } // end email
       } else {
         // error url
         $(`.span-0`).css({
           'display' : 'block'
-         }).html("url non corretto!!!");
-         console.error("url non corretto!!!");
+         }).html("url non corretto");
          return;
       } // end url
     } else {
@@ -84,3 +82,33 @@ const myFunc = {
     }
   }
 } // end const myFunc
+async function senddata(url) {
+  'use strict'
+  try {
+    let formData = new FormData();
+    formData.append('id',1);
+    const request = new Request(url, {
+      method = 'POST',
+      body: formData
+    });
+    await fetch(request)
+    .then( (response) => {
+      if(response.ok) {
+        return Promise.resolve(response.json());
+      } else {
+        return Promise.rejecy({
+          status: response.status,
+          statusText: response.statusText
+        })
+      }
+    })
+    .then( (data) => {
+      console.table(data);
+    })
+    .catch( (err) => {
+      console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
+    })
+  } catch (Exception) {
+    console.error(`Errore exception: ${Exception.message}`);
+  }
+}
