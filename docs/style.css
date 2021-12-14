@@ -262,7 +262,12 @@
     font-variant: small-caps;
     margin-top: 5px;
 }
+.btn-p:hover {
+    background-color: var(--success);
+}
+
 .btn-p {
+    transition: 2s;
     border: 1px solid var(--yellow);
     background-color: var(--primary);
     color: var(--light);
@@ -270,10 +275,6 @@
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: left center;
-}
-.btn-p:hover {
-    transition: 2s;
-    background-color: var(--success);
 }
 /* BUTTON */
 
