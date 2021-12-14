@@ -94,11 +94,11 @@
 }
 
 
-/* /COLORI CUSTOM AZIENDA. */
+/* /COLORI CUSTOMIZED AZIENDA. */
 
 
 /* CREO LE CLASSI DA CHIAMARE ALL'OCCORRENZA SOLO TESTO */
-
+/* COLOR TEXT */
 .root-text-color-blue {
     color: var(--blue);
 }
@@ -111,6 +111,11 @@
     color: var(--orange);
 }
 
+.root-text-color-cyan {
+    color: var(--cyan);
+}
+
+ /* ALIGN TEXT */
 .root-text-align-left {
     text-align: left;
 }
