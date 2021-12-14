@@ -58,7 +58,18 @@ const myFunc = {
       var valUrl = inputElement[0].value;
       if (valUrl.match(regex)) {
         // controllo email
-        console.table("Send");
+        var expressionEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var regexEmail = new RegExp(expressionEmail);
+        var valEmail = inputElement[1].value;
+        if (valEmail.match(regexEmail)) {
+          $(`.span-1`).css({
+            'display' : 'block'
+           }).html("email non corretto!!!");
+           console.error("email non corretto!!!");
+           return;
+           } else {
+            console.table("Send");
+           }
       } else {
         $(`.span-0`).css({
           'display' : 'block'
