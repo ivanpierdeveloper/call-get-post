@@ -52,10 +52,10 @@ const myFunc = {
    }); // end forEach
     
     if(num == false) {
-      var content = inputElement[0].value;
-      var urlR = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
-      var url = content.match(urlR);
-      if(url) {
+      var expression = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+      var regex = new RegExp(expression);
+      var t = inputElement[0].value;
+      if (t.match(regex)) {
         console.table("Send");
       } else {
         $(`.span-0`).css({
