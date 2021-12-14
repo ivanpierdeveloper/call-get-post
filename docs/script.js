@@ -35,8 +35,8 @@ const myFunc = {
     });
   },
   // controllo form
-  controlloAndASend : function() {
-   const inputElement =  document.querySelectorAll('.input-text').value;
+  controlloAndSend : function() {
+   var inputElement =  document.querySelectorAll('.input-text');
     console.log(inputElement.length);
   }
 } // end const myFunc
