@@ -1,3 +1,6 @@
-function messaggio() {
-  alert("Welcome to back");
+'use strict'
+const myFunc = {
+  messageToBack : function() {
+    alert("Welcome To Back!!!");
+  }
 }
