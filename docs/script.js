@@ -37,6 +37,9 @@ const myFunc = {
   // controllo form
   controlloAndSend : function() {
    var inputElement =  document.querySelectorAll('.input-text');
-    console.log(inputElement.length);
+   inputElement.forEach(function(val, indice) {
+    console.log(val);
+   });
+    
   }
 } // end const myFunc
