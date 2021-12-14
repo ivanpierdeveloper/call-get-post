@@ -115,6 +115,10 @@
     color: var(--cyan);
 }
 
+.root-text-color-danger {
+    color: var(--danger);
+}
+
  /* ALIGN TEXT */
 .root-text-align-left {
     text-align: left;
