@@ -273,6 +273,7 @@
 }
 .btn-p:hover {
     background-color: var(--success);
+    transition: 2s;
 }
 /* BUTTON */
 
