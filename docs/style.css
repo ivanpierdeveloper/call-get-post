@@ -303,3 +303,8 @@ input[type=text], input[type=password], input[type=url] {
     padding-left: 30px;
 }
 /* INPUT TYPE */
+/* SPAN */
+span {
+    display: block;
+}
+/* SPAN */
