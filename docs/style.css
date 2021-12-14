@@ -253,7 +253,7 @@
     border-radius: 8px;
     width: 150px;
     height: 30px;
-    font-family: Arial, Helvetica, sans-serif monospace;
+    font-family: Arial monospace, Helvetica monospace, sans-serif;
     font-variant: small-caps;
 }
 .btn-p {
@@ -266,7 +266,7 @@
 /* BODY */ 
 body {
     background-color: var(--secondary);
-    font-family: Arial, Helvetica, sans-serif monospace;
+    font-family: Arial monospace, Helvetica monospace, sans-serif ;
     font-variant: small-caps;
 }
 /* BODY */
