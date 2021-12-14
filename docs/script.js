@@ -33,9 +33,12 @@ const myFunc = {
       'top' : '-50%',
       'transition' : '2s'
     });
-    document.querySelector('.frm-index').submit();
   },
+  // controllo form
   controlloAndASend : function() {
-    
+   const frm =  document.querySelector('.frm-index');
+   frm.forEach(function(val, indice) {
+     console.table(val)
+   });
   }
 } // end const myFunc
