@@ -48,7 +48,6 @@ const myFunc = {
       $(`.span-${indice}`).css({
         'display' : 'none'
        });
-       num = false;
      }
    }); // end forEach
     if(num == false) {
