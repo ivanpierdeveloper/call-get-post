@@ -85,8 +85,8 @@ const myFunc = {
 async function senddata(url) {
   'use strict'
   try {
-    let formData = new FormData();
-    formData.append('id',1);
+    const formData = new FormData();
+    formData.append("id","1");
     const request = new Request(url, {
       method = 'POST',
       body: formData
