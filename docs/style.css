@@ -304,7 +304,7 @@ input[type=text], input[type=password], input[type=url] {
 }
 /* INPUT TYPE */
 /* SPAN */
-span {
+form span {
     display: block;
     position: fixed;
     right: 5%;
