@@ -250,15 +250,14 @@
 /* ELEMENTI LEFT RIGHT */
 /* BUTTON */
 .btn {
-    background-color: transparent;
     border-radius: 8px;
-    padding: 8px;
     font-variant: small-caps;
     font-family: monospace sans-serif;
     width: 150px;
     height: 30px;
 }
 .btn-p {
+    border: 1px solid var(--yellow);
     background-color: var(--primary);
     color: var(--light);
 }
