@@ -42,7 +42,7 @@ const myFunc = {
        $(`.span-${indice}`).css({
         'display' : 'block'
        });
-       return;
+       console.table(val.value);
      }
    });
     
