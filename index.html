@@ -48,9 +48,14 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="docs/script.js"></script>
     <script lang="javascript">
+      const myFunc = {
+        messageToBack : function(){
+          alert("Welcome To Back");
+        }
+      }
       $( (e) => {
-        alert("FULL SCREEN");
         setTimeout(function() {
+          myFunc.messageToBack();
           $('.full-screen').css({
             'display' : 'block'
           })
