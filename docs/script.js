@@ -62,21 +62,23 @@ const myFunc = {
         var regexEmail = new RegExp(expressionEmail);
         var valEmail = inputElement[1].value;
         if (valEmail.match(regexEmail)) {
+          console.log("Send form");
+        } else {
+          // error email
           $(`.span-1`).css({
             'display' : 'block'
-           }).html("email non corretto!!!");
-           console.error("email non corretto!!!");
-           return;
-           } else {
-            console.table("Send");
-           }
+            }).html("email non corretto!!!");
+            console.error("email non corretto!!!");
+            return;
+        } // end email
       } else {
+        // error url
         $(`.span-0`).css({
           'display' : 'block'
          }).html("url non corretto!!!");
          console.error("url non corretto!!!");
          return;
-      }
+      } // end url
     } else {
       console.error("Errore: Non hai compilato tutti i campi obbligatori|||");
     }
