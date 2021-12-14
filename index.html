@@ -87,7 +87,7 @@
           <input type="text" id="usr" name="usr" class="input-text" placeholder="username" required>
           <label for="psw" class="root-text-color-cyan">password</label>
           <input type="password" id="psw" name="psw" class="input-text" placeholder="password">
-          <button class="btn btn-p crs-pointer" onclick="javascript:myFunc.showAlert('Message from button', 'var(--dark)', 'var(--yellow)', 'var(--giallo)');">mostra alert</button>
+          <button class="btn btn-p crs-pointer btn-send-form">mostra alert</button>
         </form>
       </div>
     </div>
@@ -95,6 +95,12 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="docs/script.js"></script>
     <script lang="javascript">
+      // send form
+      document.querySelector('.btn-send-form').addEventListener('click', function(event) {
+        event.preventDefault();
+        myFunc.showAlert('Message from button', 'var(--dark)', 'var(--yellow)', 'var(--giallo)');
+      });
+      // close alert
       document.querySelector('.img-close').addEventListener('click', (e) => {
         e.preventDefault();
         myFunc.closeMyAlert();
