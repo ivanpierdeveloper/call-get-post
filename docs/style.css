@@ -308,5 +308,6 @@ form span {
     display: block;
     position: fixed;
     right: 5%;
+    display: none;
 }
 /* SPAN */

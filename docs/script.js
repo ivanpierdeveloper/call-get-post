@@ -1,12 +1,15 @@
 'use strict'
 const myFunc = {
+  // messaggio di test
   messageToBack : function() {
     alert("Welcome To Back!!!");
   },
+  // messaggio myAlert
   messaggioMyAlert : function(testo) {
     let spanalert = document.querySelector('.my-alert-testo');
     spanalert.innerHTML = testo;
   },
+  // mostro myAlert
   showAlert : function(testo, sfondo, testocl, bordo) {
     $('.full-screen').css({
       'display' : 'block'
@@ -20,6 +23,7 @@ const myFunc = {
     });
     myFunc.messaggioMyAlert(testo);
   },
+  // chiudo myAlert
   closeMyAlert : function() {
     $('.full-screen').css({
       'display' : 'none'
@@ -29,5 +33,9 @@ const myFunc = {
       'top' : '-50%',
       'transition' : '2s'
     });
+    document.querySelector('.frm-index').addEventListener('submit');
+  },
+  controlloAndASend : function() {
+    let frm = 
   }
 } // end const myFunc
