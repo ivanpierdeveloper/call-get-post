@@ -53,7 +53,11 @@
   </head>
   <body>
     <div class="full-screen"></div>
-    <div class="my-alert">OK</div>
+    <div class="my-alert">
+      <h5>Messaggio</h5>
+      <span class="my-alert-testo"></span>
+      <hr />
+    </div>
     <div class="container">
       <h1 class="root-text-color-orange">WelCome Get And Post Testing</h1>
       <hr />
@@ -74,6 +78,7 @@
               'top' : '50%',
               'transition' : '2s'
           });
+          myFunc.messaggioMyAlert("Welcome to back my alert");
         }, 3000);
       });
     </script>
