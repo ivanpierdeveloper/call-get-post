@@ -50,8 +50,19 @@ const myFunc = {
        });
      }
    }); // end forEach
+    
     if(num == false) {
-      console.table("Send");
+      var content = inputElement[0].value;
+      var urlR = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
+      var url = content.match(urlR);
+      if(url) {
+        console.table("Send");
+      } else {
+        $(`.span-0`).css({
+          'display' : 'block'
+         });
+         return;
+      }
     } else {
       console.error("Errore: Non hai compilato tutti i campi obbligatori|||");
     }
