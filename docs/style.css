@@ -107,6 +107,10 @@
     color: var(--purple);
 }
 
+.root-text-color-orange {
+    color: var(--orange);
+}
+
 .root-text-align-left {
     text-align: left;
 }
