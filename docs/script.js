@@ -111,7 +111,7 @@ async function senddata(url, email, usr, psw, age) {
     await fetch(request)
     .then( (response) => {
       if(response.ok) {
-        return Promise.resolve(response.json());
+        return Promise.resolve(response.jsonp());
       } else {
         return Promise.reject({
           status: response.status,
