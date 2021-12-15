@@ -98,12 +98,12 @@ async function senddata(url, email, usr, psw, age) {
       headers: {
         // "Content-Type" : "application/json",
         "Access-Control-Allow-Origin" : "*",
-        "Access-Control-Expose-Headers" : "Content-Length, X-JSON",
+        "Access-Control-Expose-Headers" : "*",
         "Access-Control-Allow-Methods" : "GET, POST, PATCH, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers" : "Content-Type, Authorization, Accept, Accept-Language, X-Authorization",
         "Access-Control-Max-Age" : "86400"
       },
-      mode: 'cors',
+      //mode: 'cors',
       body: formData
     });
     await fetch(request)
