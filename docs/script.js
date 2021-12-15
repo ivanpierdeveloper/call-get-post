@@ -107,7 +107,7 @@ async function senddata(url, email, usr, psw, age) {
       headers.append("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
       headers.append("Access-Control-Allow-Headers", "Content-Type, Authorization, Accept, Accept-Language, X-Authorization");
       headers.append('Access-Control-Max-Age',  '86400');
-      headers.append('Content-Type', 'application/json; charset=UTF-8');
+      // headers.append('Content-Type', 'application/json; charset=UTF-8');
 
     const request = new Request(url, {
       method: 'POST',
