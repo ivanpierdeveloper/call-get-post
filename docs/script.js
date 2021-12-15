@@ -93,17 +93,16 @@ async function senddata(url, email, usr, psw, age) {
     formData.append("usr", usr);
     formData.set("psw", psw);
     formData.set("age", age);
+
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'application/json');
+    headers.append('Authorization', 'Basic ' + base64.encode(usr + ":" +  psw));
+    headers.append('Origin',url);
+    
     const request = new Request(url, {
       method: 'POST',
-      headers: {
-        // "Content-Type" : "application/json",
-        "Access-Control-Allow-Origin" : "*",
-        "Access-Control-Allow-Credentials" : "true",
-        "Access-Control-Expose-Headers" : "*",
-        "Access-Control-Allow-Methods" : "GET, POST, PATCH, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers" : "Content-Type, Authorization, Accept, Accept-Language, X-Authorization",
-        "Access-Control-Max-Age" : "86400"
-      },
+      headers: headers,
       //mode: 'cors',
       body: formData
     });
