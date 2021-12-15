@@ -84,7 +84,7 @@ const myFunc = {
     }
   }
 } // end const myFunc
-async function senddata(url, email, usr) {
+async function senddata(url, email, usr, psw) {
   'use strict'
   try {
     const formData = new FormData();
@@ -111,6 +111,7 @@ async function senddata(url, email, usr) {
       console.table(data);
     })
     .catch( (err) => {
+      console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
       setTimeout( (e) => {
         // console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
         myFunc.showAlert(`codice di errore: ${err.status} messaggio di errore: ${err.statusText}`, "var(--danger)", "var(--dark)", "var(--orange)");
