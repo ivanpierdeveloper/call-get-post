@@ -102,12 +102,14 @@ async function senddata(url, email, usr, psw, age) {
       // headers.append('Origin',url);
       // text/plain, multipart/form-data o application/x-www-form-urlencoded. 
       //headers.append("Access-Control-Allow-Origin", "*");
-      headers.append('Access-Control-Allow-Origin', '*'); // IMPORTANTE CORS “Access-Control-Allow-Origin” mancante
-      // headers.append("Access-Control-Expose-Headers", "Content-Length, X-JSON");
-      headers.append("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
-      headers.append("Access-Control-Allow-Headers", "Content-Type, Authorization, Accept, Accept-Language, X-Authorization");
-      // headers.append('Access-Control-Max-Age',  '86400');
-      // headers.append('Content-Type', 'application/json; charset=UTF-8');
+      headers.append({
+        "Access-Control-Allow-Origin" : "*", 
+        "Access-Control-Allow-Methods" : "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+        }); 
+        // IMPORTANTE CORS “Access-Control-Allow-Origin” mancante
+        // headers.append("Access-Control-Expose-Headers", "Content-Length, X-JSON");
+        // headers.append('Access-Control-Max-Age',  '86400');
+        // headers.append('Content-Type', 'application/json; charset=UTF-8');
 
     const request = new Request(url, {
       method: 'POST',
