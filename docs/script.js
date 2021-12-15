@@ -62,7 +62,7 @@ const myFunc = {
         var regexEmail = new RegExp(expressionEmail);
         var valEmail = inputElement[1].value;
         if (valEmail.match(regexEmail)) {
-          senddata(valUrl);
+          senddata(valUrl, valEmail, inputElement[2].value, inputElement[3].value);
         } else {
           // error email
           $(`.span-1`).css({
@@ -83,12 +83,14 @@ const myFunc = {
     }
   }
 } // end const myFunc
-async function senddata(url) {
+async function senddata(url, email, usr) {
   'use strict'
   try {
     const formData = new FormData();
-    formData.append("id",1);
-    formData.append("usr","utente Get And Post");
+    formData.append("id", 2);
+    formData.append("mail", mail);
+    formData.append("usr", usr);
+    formData.set("psw", psw);
     const request = new Request(url, {
       method: 'POST',
       body: formData
@@ -109,7 +111,7 @@ async function senddata(url) {
     })
     .catch( (err) => {
       // console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
-      myFunc.showAlert(`Codice di errore: ${}`)
+      myFunc.showAlert(`Codice di errore: ${err.status} Messaggio di errore: ${err.statusText}`);
     })
   } catch (Exception) {
     console.error(`Errore exception: ${Exception.message}`);
