@@ -101,7 +101,7 @@ async function senddata(url, email, usr, psw, age) {
       headers.append('Origin',url);
 
     const request = new Request(url, {
-      mode: 'no-cors',
+      mode: 'cors',
       method: 'POST',
       headers: headers,
       body: formData
