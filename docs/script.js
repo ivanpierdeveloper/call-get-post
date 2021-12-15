@@ -96,7 +96,7 @@ async function senddata(url, email, usr, psw, age) {
     const request = new Request(url, {
       method: 'POST',
       headers: {
-        "Content-Type" : "application/json",
+        // "Content-Type" : "application/json",
         "Access-Control-Allow-Origin" : "*",
         "Access-Control-Expose-Headers" : "Content-Length, X-JSON",
         "Access-Control-Allow-Methods" : "GET, POST, PATCH, PUT, DELETE, OPTIONS",
