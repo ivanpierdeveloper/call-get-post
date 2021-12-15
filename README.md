@@ -5,6 +5,7 @@ app per testare le chiamate GET &amp; POST
 <a href="https://ivanpierdeveloper.github.io/testingGetPost/index">Inizia</a>
 <img src="https://cdn.shopify.com/s/files/1/0104/7583/1377/products/GOH72169.001_1_1200x1200.jpg?v=1616437645" />
 ESEMPIO DI COME SCRIVERE LA PAGINA CHE RICEVE LE CHIAMATE GET E POST:
+<br />
 ## INIZIO ##
 <?php
     header('Access-Control-Allow-Origin: *'); // IMPORTANTE CORS “Access-Control-Allow-Origin” mancante
