@@ -46,5 +46,8 @@ app per testare le chiamate GET &amp; POST
 
 ## FINE ##
 
+<img src="img/screenshot.png" width="1000" height="700" alt="Immagine non disponibile" />
+<br />
 <a href="https://ivanpierdeveloper.github.io/testingGetPost/index">Vai all'APP ^__^</a>
-<img src="https://cdn.shopify.com/s/files/1/0104/7583/1377/products/GOH72169.001_1_1200x1200.jpg?v=1616437645" />
+
+<!-- <img src="https://cdn.shopify.com/s/files/1/0104/7583/1377/products/GOH72169.001_1_1200x1200.jpg?v=1616437645" /> -->
