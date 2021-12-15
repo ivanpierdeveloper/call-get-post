@@ -103,6 +103,7 @@ async function senddata(url, email, usr, psw, age) {
       // text/plain, multipart/form-data o application/x-www-form-urlencoded. 
       headers.append("Access-Control-Allow-Origin", "*");
       headers.append('Access-Control-Allow-Headers', "*");
+      headers.append("Access-Control-Allow-Methods", "*");
       /* headers.append("Access-Control-Allow-Origin", "*"); 
       headers.append("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS"); */
         // 'Content-Type' : 'multipart/form-data'
