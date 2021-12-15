@@ -102,11 +102,9 @@ async function senddata(url, email, usr, psw, age) {
       // headers.append('Origin',url);
       // text/plain, multipart/form-data o application/x-www-form-urlencoded. 
       //headers.append("Access-Control-Allow-Origin", "*");
-      headers.append({
-        "Access-Control-Allow-Origin" : "*", 
-        "Access-Control-Allow-Methods" : "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+      headers.append("Access-Control-Allow-Origin", "*"); 
+      headers.append("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
         // 'Content-Type' : 'multipart/form-data'
-        }); 
         // IMPORTANTE CORS “Access-Control-Allow-Origin” mancante
         // headers.append("Access-Control-Expose-Headers", "Content-Length, X-JSON");
         // headers.append('Access-Control-Max-Age',  '86400');
