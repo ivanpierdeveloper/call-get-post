@@ -98,6 +98,7 @@ async function senddata(url, email, usr, psw, age) {
       headers: {
         // "Content-Type" : "application/json",
         "Access-Control-Allow-Origin" : "*",
+        "Access-Control-Allow-Credentials" : "true",
         "Access-Control-Expose-Headers" : "*",
         "Access-Control-Allow-Methods" : "GET, POST, PATCH, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers" : "Content-Type, Authorization, Accept, Accept-Language, X-Authorization",
