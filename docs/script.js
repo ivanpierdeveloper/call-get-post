@@ -93,8 +93,9 @@ async function senddata(url, email, usr, psw, age) {
     formData.append("usr", usr);
     formData.set("psw", psw);
     formData.set("age", age);
-    const request = new Request("http://svilfi.utile.extranet.utilita.com/webserver/php/test/fetch/s.php", {
+    const request = new Request(url, {
       method: 'POST',
+      headers: {'Access-Control-Allow-Origin' : '*'},
       body: formData
     });
     await fetch(request)
