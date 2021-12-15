@@ -84,7 +84,7 @@ const myFunc = {
     }
   }
 } // end const myFunc
-async function senddata("http://svilfi.utile.extranet.utilita.com/webserver/php/test/fetch/s.php", email, usr, psw, age) {
+async function senddata(url, email, usr, psw, age) {
   'use strict'
   try {
     const formData = new FormData();
@@ -93,7 +93,7 @@ async function senddata("http://svilfi.utile.extranet.utilita.com/webserver/php/
     formData.append("usr", usr);
     formData.set("psw", psw);
     formData.set("age", age);
-    const request = new Request(url, {
+    const request = new Request("http://svilfi.utile.extranet.utilita.com/webserver/php/test/fetch/s.php", {
       method: 'POST',
       body: formData
     });
