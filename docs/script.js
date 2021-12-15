@@ -88,7 +88,7 @@ async function senddata(url, email, usr) {
   try {
     const formData = new FormData();
     formData.append("id", 2);
-    formData.append("mail", mail);
+    formData.append("email", email);
     formData.append("usr", usr);
     formData.set("psw", psw);
     const request = new Request(url, {
