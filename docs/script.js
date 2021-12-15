@@ -111,7 +111,7 @@ async function senddata(url, email, usr) {
     })
     .catch( (err) => {
       // console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
-      myFunc.showAlert(`Codice di errore: ${err.status} Messaggio di errore: ${err.statusText}`);
+      myFunc.showAlert(`Codice di errore: ${err.status} Messaggio di errore: ${err.statusText}`, "var(--danger)", "var(--dark)", "var(--orange)");
     })
   } catch (Exception) {
     console.error(`Errore exception: ${Exception.message}`);
