@@ -112,7 +112,7 @@ async function senddata(url, email, usr, psw, age) {
         // headers.append('Content-Type', 'application/json; charset=UTF-8');
     const request = new Request(url, {
       method: 'POST',
-      mode: 'no-cors',
+      mode: 'cors',
       // headers: headers,
       body: formData
     });
