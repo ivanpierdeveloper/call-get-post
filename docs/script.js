@@ -63,6 +63,7 @@ const myFunc = {
         var valEmail = inputElement[1].value;
         if (valEmail.match(regexEmail)) {
           senddata(valUrl, valEmail, inputElement[2].value, inputElement[3].value);
+          this.showAlert("dati inviati con successo", "var(--success)", "var(--white)", "var(--orange)");
         } else {
           // error email
           $(`.span-1`).css({
@@ -79,7 +80,7 @@ const myFunc = {
       } // end url
     } else {
       // console.error("Errore: Non hai compilato tutti i campi obbligatori|||");
-      myFunc.showAlert("Errore: Non hai compilato tutti i campi obbligatori", "var(--danger)", "var(--dark)", "var(--orange)");
+      myFunc.showAlert("errore: Non hai compilato tutti i campi obbligatori", "var(--danger)", "var(--dark)", "var(--orange)");
     }
   }
 } // end const myFunc
@@ -111,10 +112,10 @@ async function senddata(url, email, usr) {
     })
     .catch( (err) => {
       // console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
-      myFunc.showAlert(`Codice di errore: ${err.status} Messaggio di errore: ${err.statusText}`, "var(--danger)", "var(--dark)", "var(--orange)");
+      myFunc.showAlert(`codice di errore: ${err.status} messaggio di errore: ${err.statusText}`, "var(--danger)", "var(--dark)", "var(--orange)");
     })
   } catch (Exception) {
     // console.error(`Errore exception: ${Exception.message}`);
-    myFunc.showAlert(`Errore exception: ${Exception.message}`, "var(--danger)", "var(--dark)", "var(--orange)");
+    myFunc.showAlert(`errore exception: ${Exception.message}`, "var(--danger)", "var(--dark)", "var(--orange)");
   }
 }
