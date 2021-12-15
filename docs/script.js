@@ -116,7 +116,7 @@ async function senddata(url, email, usr, psw, age) {
       //console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
       //setTimeout( (e) => {
         // console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
-        myFunc.showAlert(`codice di errore: ${err.status} messaggio di errore: ${err.statusText}`, "var(--danger)", "var(--dark)", "var(--orange)");
+        myFunc.showAlert(`codice di errore: ${err.status} messaggio di errore: ${err.statusText}.\noppure devi disattivare il lucchetto perchè il contenuto è misto.`, "var(--danger)", "var(--dark)", "var(--orange)");
       //}, 2000);
     })
   } catch (Exception) {
