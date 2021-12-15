@@ -122,7 +122,7 @@ async function senddata(url, email, usr, psw, age) {
       //console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
       //setTimeout( (e) => {
         // console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
-        myFunc.showAlert(`codice di errore: ${err.status} messaggio di errore: ${err.statusText}.<br />o disattivare il lucchetto per corregere il messaggio da parte del browser (Bloccato il caricamento di contenuto misto attivo (mixed active content).).`, "var(--danger)", "var(--dark)", "var(--orange)");
+        myFunc.showAlert(`codice di errore: ${err.status} messaggio di errore: ${err.statusText}.<br />o disattivare il lucchetto per correggere il messaggio da parte del browser (bloccato il caricamento di contenuto misto attivo (mixed active content)).`, "var(--danger)", "var(--dark)", "var(--orange)");
       //}, 2000);
     })
   } catch (Exception) {
