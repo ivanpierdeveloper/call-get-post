@@ -78,7 +78,8 @@ const myFunc = {
          return;
       } // end url
     } else {
-      console.error("Errore: Non hai compilato tutti i campi obbligatori|||");
+      // console.error("Errore: Non hai compilato tutti i campi obbligatori|||");
+      myFunc.showAlert("Errore: Non hai compilato tutti i campi obbligatori", "var(--danger)", "var(--dark)", "var(--orange)");
     }
   }
 } // end const myFunc
@@ -107,7 +108,8 @@ async function senddata(url) {
       console.table(data);
     })
     .catch( (err) => {
-      console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
+      // console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
+      myFunc.showAlert(`Codice di errore: ${}`)
     })
   } catch (Exception) {
     console.error(`Errore exception: ${Exception.message}`);
