@@ -104,8 +104,8 @@ async function senddata(url, email, usr, psw, age) {
       //headers.append("Access-Control-Allow-Origin", "*");
       headers.append({
         "Access-Control-Allow-Origin" : "*", 
-        "Access-Control-Allow-Methods" : "GET, POST, PATCH, PUT, DELETE, OPTIONS",
-        'Content-Type' : 'multipart/form-data'
+        "Access-Control-Allow-Methods" : "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+        // 'Content-Type' : 'multipart/form-data'
         }); 
         // IMPORTANTE CORS “Access-Control-Allow-Origin” mancante
         // headers.append("Access-Control-Expose-Headers", "Content-Length, X-JSON");
