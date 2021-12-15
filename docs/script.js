@@ -100,6 +100,7 @@ async function senddata(url, email, usr, psw, age) {
       headers.append('Accept', 'application/json');
       headers.append('Authorization', 'Basic ' + base64.encode(usr + ":" +  psw)); */
       // headers.append('Origin',url);
+      // text/plain, multipart/form-data o application/x-www-form-urlencoded. 
       headers.append("Access-Control-Allow-Origin", "*");
 
     const request = new Request(url, {
@@ -111,7 +112,7 @@ async function senddata(url, email, usr, psw, age) {
     await fetch(request)
     .then( (response) => {
       if(response.ok) {
-        return Promise.resolve(response.jsonp());
+        return Promise.resolve(response.json());
       } else {
         return Promise.reject({
           status: response.status,
