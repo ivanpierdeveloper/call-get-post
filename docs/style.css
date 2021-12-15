@@ -307,7 +307,7 @@ input[type=text], input[type=password], input[type=url], input[type=email] {
 form span {
     display: block;
     position: fixed;
-    left: 50%;
+    left: 60%;
     display: none;
 }
 /* SPAN */
