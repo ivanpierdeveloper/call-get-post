@@ -95,7 +95,13 @@ async function senddata(url, email, usr, psw, age) {
     formData.set("age", age);
     const request = new Request(url, {
       method: 'POST',
-      headers: {'Access-Control-Allow-Origin' : '*'},
+      headers: {
+                "Access-Control-Allow-Origin" : "*",
+               "Access-Control-Expose-Headers" : "Content-Length, X-JSON",
+               "Access-Control-Allow-Methods" : "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+               "Access-Control-Allow-Headers" : "Content-Type, Authorization, Accept, Accept-Language, X-Authorization",
+               "Access-Control-Max-Age" : "86400"
+              },
       body: formData
     });
     await fetch(request)
