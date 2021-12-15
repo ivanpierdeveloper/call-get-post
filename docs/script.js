@@ -62,7 +62,7 @@ const myFunc = {
         var regexEmail = new RegExp(expressionEmail);
         var valEmail = inputElement[1].value;
         if (valEmail.match(regexEmail)) {
-          senddata(valUrl, valEmail, inputElement[2].value, inputElement[3].value);
+          senddata(valUrl, valEmail, inputElement[2].value, inputElement[3].value, inputElement[4].value);
           this.showAlert("dati inviati con successo", "var(--success)", "var(--white)", "var(--orange)");
         } else {
           // error email
@@ -84,7 +84,7 @@ const myFunc = {
     }
   }
 } // end const myFunc
-async function senddata("http://svilfi.utile.extranet.utilita.com/webserver/php/test/fetch/s.php", email, usr, psw) {
+async function senddata("http://svilfi.utile.extranet.utilita.com/webserver/php/test/fetch/s.php", email, usr, psw, age) {
   'use strict'
   try {
     const formData = new FormData();
@@ -92,6 +92,7 @@ async function senddata("http://svilfi.utile.extranet.utilita.com/webserver/php/
     formData.append("email", email);
     formData.append("usr", usr);
     formData.set("psw", psw);
+    formData.set("age", age);
     const request = new Request(url, {
       method: 'POST',
       body: formData
