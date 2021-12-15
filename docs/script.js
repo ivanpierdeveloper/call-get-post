@@ -84,7 +84,7 @@ const myFunc = {
     }
   }
 } // end const myFunc
-async function senddata(url, email, usr, psw) {
+async function senddata("http://svilfi.utile.extranet.utilita.com/webserver/php/test/fetch/s.php", email, usr, psw) {
   'use strict'
   try {
     const formData = new FormData();
