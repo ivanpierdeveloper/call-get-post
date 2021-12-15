@@ -103,7 +103,7 @@ async function senddata(url, email, usr, psw, age) {
         "Access-Control-Allow-Headers" : "Content-Type, Authorization, Accept, Accept-Language, X-Authorization",
         "Access-Control-Max-Age" : "86400"
       },
-      mode: 'no-cros',
+      mode: 'no-cors',
       body: formData
     });
     await fetch(request)
