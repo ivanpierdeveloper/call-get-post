@@ -95,9 +95,9 @@ async function senddata(url, email, usr, psw, age) {
     formData.set("age", age);
 
     let headers = new Headers();
-      headers.append('Content-Type', 'application/json');
+      /* headers.append('Content-Type', 'application/json');
       headers.append('Accept', 'application/json');
-      headers.append('Authorization', 'Basic ' + base64.encode(usr + ":" +  psw));
+      headers.append('Authorization', 'Basic ' + base64.encode(usr + ":" +  psw)); */
       headers.append('Origin',url);
 
     const request = new Request(url, {
