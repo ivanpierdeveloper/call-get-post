@@ -80,7 +80,7 @@ const myFunc = {
       } // end url
     } else {
       // console.error("Errore: Non hai compilato tutti i campi obbligatori|||");
-      myFunc.showAlert("errore: non hai compilato tutti i campi obbligatori", "var(--danger)", "var(--dark)", "var(--orange)");
+      myFunc.showAlert("errore: tutti i campi sono obbligatori", "var(--danger)", "var(--dark)", "var(--orange)");
     }
   }
 } // end const myFunc
