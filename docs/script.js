@@ -99,7 +99,7 @@ async function senddata(url, email, usr, psw, age) {
       headers.append('Content-Type', 'application/x-www-form-urlencoded');
       headers.append('Accept', 'application/json');
       headers.append('Authorization', 'Basic ' + base64.encode(usr + ":" +  psw)); */
-      headers.append('Origin',url);
+      // headers.append('Origin',url);
       headers.append("Access-Control-Allow-Origin", "*");
 
     const request = new Request(url, {
