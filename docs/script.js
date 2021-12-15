@@ -99,10 +99,11 @@ async function senddata(url, email, usr, psw, age) {
       headers.append('Accept', 'application/json');
       headers.append('Authorization', 'Basic ' + base64.encode(usr + ":" +  psw)); */
       headers.append('Origin',url);
+      headers.append('Content-Type','application/json');
 
     const request = new Request(url, {
       method: 'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       headers: headers,
       body: formData
     });
