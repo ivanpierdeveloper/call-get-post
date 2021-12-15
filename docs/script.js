@@ -113,16 +113,14 @@ async function senddata(url, email, usr, psw, age) {
       console.table(data);
     })
     .catch( (err) => {
-      console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
-      setTimeout( (e) => {
+      //console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
+      //setTimeout( (e) => {
         // console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
         myFunc.showAlert(`codice di errore: ${err.status} messaggio di errore: ${err.statusText}`, "var(--danger)", "var(--dark)", "var(--orange)");
-      }, 2000);
+      //}, 2000);
     })
   } catch (Exception) {
     // console.error(`Errore exception: ${Exception.message}`);
-    setTimeout( (e) => {
       myFunc.showAlert(`errore exception: ${Exception.message}`, "var(--danger)", "var(--dark)", "var(--orange)");
-    }, 2000);
   }
 }
