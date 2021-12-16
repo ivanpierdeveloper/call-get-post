@@ -134,7 +134,7 @@ async function senddata(url, email, usr, psw, age) {
     })
     .then( (data) => {
       var stampa = document.querySelector('.stampa');
-      
+
       console.table(data);
     })
     .catch( (err) => {
@@ -153,4 +153,21 @@ async function senddata(url, email, usr, psw, age) {
     // console.error(`Errore exception: ${Exception.message}`);
       myFunc.showAlert(`errore exception: ${Exception.message}`, "var(--danger)", "var(--dark)", "var(--orange)");
   }
+} // ./senddata
+class Clsmultyfunction {
+  createElement() {
+    const divContent = document.querySelector('.content');
+    
+    let divResult = document.createElement('div');
+    divResult.style.setProperty('border', '1px solid var(--primary)');
+    divResult.style.setProperty('border-radius', '8px');
+    divResult.style.setProperty('padding', '18px');
+    divResult.style.setProperty('width', 'auto');
+    divResult.style.setProperty('height', 'auto');
+    divResult.style.setProperty('margin', '0 auto');
+
+    divContent.appendChild(divResult);
+  }
 }
+const cls = new Clsmultyfunction();
+cls.createElement();
