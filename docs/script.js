@@ -174,6 +174,7 @@ class Clsmultyfunction {
     divResult.style.setProperty('margin', '0 auto');
     divResult.style.setProperty('position', 'relative');
     divResult.style.setProperty('top', '10px');
+    divResult.style.setProperty('color', 'var(--giallo)');
     divResult.append(el);
     divContent.appendChild(divResult);
   }
