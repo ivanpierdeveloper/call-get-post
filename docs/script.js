@@ -101,9 +101,9 @@ async function senddata(url, email, usr, psw, age) {
       headers.append('Authorization', 'Basic ' + base64.encode(usr + ":" +  psw)); */
       // headers.append('Origin',url);
       // text/plain, multipart/form-data o application/x-www-form-urlencoded. 
-      headers.append("Access-Control-Allow-Origin", "*");
+     /*  headers.append("Access-Control-Allow-Origin", "*");
       headers.append('Access-Control-Allow-Headers', "*");
-      headers.append("Access-Control-Allow-Methods", "*");
+      headers.append("Access-Control-Allow-Methods", "*"); */
       /* headers.append("Access-Control-Allow-Origin", "*"); 
       headers.append("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS"); */
         // 'Content-Type' : 'multipart/form-data'
@@ -111,6 +111,7 @@ async function senddata(url, email, usr, psw, age) {
         // headers.append("Access-Control-Expose-Headers", "Content-Length, X-JSON");
         // headers.append('Access-Control-Max-Age',  '86400');
         // headers.append('Content-Type', 'application/json; charset=UTF-8');
+        headers.append("Content-Type", "application/x-www-form-urlencoded");
     const request = new Request(url, {
       method: 'POST',
       mode: 'cors',
