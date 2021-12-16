@@ -188,6 +188,6 @@ class Clsmultyfunction {
     divResult.style.setProperty('top', '10px');
     divResult.style.setProperty('color', 'var(--giallo)');
     divResult.append(el);
-    divContent.appendChild(divResult);
+    divContent.append(divResult);
   }
 }
