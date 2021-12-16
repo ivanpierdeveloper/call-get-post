@@ -94,11 +94,11 @@ async function senddata(url, email, usr, psw, age) {
     formData.set("psw", psw);
     formData.set("age", age); */
     formData.append({
-      id : 2,
-      email : email,
-      usr : usr,
-      psw : psw,
-      age : age
+      "id" : 2,
+      "email" : email,
+      "usr" : usr,
+      "psw" : psw,
+      "age" : age
     });
 
     let headers = new Headers();
