@@ -188,8 +188,7 @@ class Clsmultyfunction {
     divResult.style.setProperty('width', 'auto');
     divResult.style.setProperty('height', 'auto');
     divResult.style.setProperty('margin', '0 auto');
-    divResult.style.setProperty('position', 'relative');
-    divResult.style.setProperty('top', '10px');
+    divResult.style.setProperty('margin-top', '10px');
     divResult.style.setProperty('color', 'var(--orange)');
     divResult.appendChild(el);
     divContent.appendChild(divResult);
