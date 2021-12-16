@@ -136,12 +136,13 @@ async function senddata(url, email, usr, psw, age) {
       console.table(data);
       
       var ul = document.createElement('ul');
-      data.forEach(function(val, indice) {
         var liId    = document.createElement('li');
         var liEmail = document.createElement('li');
         var liUsr   = document.createElement('li');
         var liPsw   = document.createElement('li');
         var liAge   = document.createElement('li');
+        var hr      = document.createElement('hr');
+      data.forEach(function(val, indice) {
         liId.appendChild(document.createTextNode(`id: ${val.id}`));
         liEmail.appendChild(document.createTextNode(`e-mail: ${val.email}`));
         liUsr.appendChild(document.createTextNode(`usr: ${val.usr}`));
@@ -152,6 +153,7 @@ async function senddata(url, email, usr, psw, age) {
         ul.appendChild(liUsr);
         ul.appendChild(liPsw);
         ul.appendChild(liAge);
+        ul.appendChild(hr);
       }); // ./forEach
       const cls = new Clsmultyfunction();
       cls.createElement(ul);
