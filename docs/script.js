@@ -184,10 +184,10 @@ class Clsmultyfunction {
 
     numDiv += 1;
     let title = document.createElement('h5'); // title
-    title.style.setProperty('text-aling', 'center');
+    title.style.setProperty('text-align', 'center');
     title.style.setProperty('color', 'var(--yellow');
 
-    let titlePanel = document.createTextNode(numDiv); // testo panel and title
+    let titlePanel = document.createTextNode(`pannello: ${numDiv}`); // testo panel and title
     title.appendChild(titlePanel);
     
     let divResult = document.createElement('div'); // div result
