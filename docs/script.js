@@ -136,18 +136,20 @@ async function senddata(url, email, usr, psw, age) {
       console.table(data);
       
       var ul = document.createElement('ul');
+      var hr      = document.createElement('hr');
+      data.forEach(function(val, indice) {
         var liId    = document.createElement('li');
         var liEmail = document.createElement('li');
         var liUsr   = document.createElement('li');
         var liPsw   = document.createElement('li');
         var liAge   = document.createElement('li');
-        var hr      = document.createElement('hr');
-      data.forEach(function(val, indice) {
+        
         liId.append(document.createTextNode(`id: ${val.id}`));
         liEmail.append(document.createTextNode(`e-mail: ${val.email}`));
         liUsr.append(document.createTextNode(`usr: ${val.usr}`));
         liPsw.append(document.createTextNode(`psw: ${val.psw}`));
         liAge.append(document.createTextNode(`age: ${val.age}`));
+        
         ul.append(liId);
         ul.append(liEmail);
         ul.append(liUsr);
