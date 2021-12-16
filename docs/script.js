@@ -118,7 +118,7 @@ async function senddata(url, email, usr, psw, age) {
     const request = new Request(url, {
       method: 'POST',
       mode: 'no-cors',
-      // headers: headers,
+      headers: headers,
       body: formData
     });
     await fetch(request)
