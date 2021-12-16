@@ -88,11 +88,18 @@ async function senddata(url, email, usr, psw, age) {
   'use strict'
   try {
     const formData = new FormData();
-    formData.append("id", 2);
+   /*  formData.append("id", 2);
     formData.append("email", email);
     formData.append("usr", usr);
     formData.set("psw", psw);
-    formData.set("age", age);
+    formData.set("age", age); */
+    formData.append({
+      id : 2,
+      email : email,
+      usr : usr,
+      psw : psw,
+      age : age
+    });
 
     let headers = new Headers();
       /* headers.append('Content-Type', 'application/json');
