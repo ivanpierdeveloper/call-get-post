@@ -113,8 +113,8 @@ async function senddata(url, email, usr, psw, age) {
         // headers.append('Access-Control-Max-Age',  '86400');
         // headers.append('Content-Type', 'application/json; charset=UTF-8');
         headers.append("Content-Type", "application/x-www-form-urlencoded"); // OK POST
-        headers.append("Access-Control-Allow-Origin", "*");
-        // headers.append('Content-Type', 'text/json', 'Access-Control-Allow-Origin'); // Controllo di accesso Consenti all'origine
+        // headers.append("Access-Control-Allow-Origin", "*");
+        headers.append('Content-Type', 'text/json', 'Access-Control-Allow-Origin'); // Controllo di accesso Consenti all'origine
     const request = new Request(url, {
       method: 'POST',
       mode: 'no-cors',
