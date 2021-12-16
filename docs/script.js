@@ -143,17 +143,17 @@ async function senddata(url, email, usr, psw, age) {
         var liAge   = document.createElement('li');
         var hr      = document.createElement('hr');
       data.forEach(function(val, indice) {
-        liId.appendChild(document.createTextNode(`id: ${val.id}`));
-        liEmail.appendChild(document.createTextNode(`e-mail: ${val.email}`));
-        liUsr.appendChild(document.createTextNode(`usr: ${val.usr}`));
-        liPsw.appendChild(document.createTextNode(`psw: ${val.psw}`));
-        liAge.appendChild(document.createTextNode(`age: ${val.age}`));
-        ul.appendChild(liId);
-        ul.appendChild(liEmail);
-        ul.appendChild(liUsr);
-        ul.appendChild(liPsw);
-        ul.appendChild(liAge);
-        ul.appendChild(hr);
+        liId.append(document.createTextNode(`id: ${val.id}`));
+        liEmail.append(document.createTextNode(`e-mail: ${val.email}`));
+        liUsr.append(document.createTextNode(`usr: ${val.usr}`));
+        liPsw.append(document.createTextNode(`psw: ${val.psw}`));
+        liAge.append(document.createTextNode(`age: ${val.age}`));
+        ul.append(liId);
+        ul.append(liEmail);
+        ul.append(liUsr);
+        ul.append(liPsw);
+        ul.append(liAge);
+        ul.append(hr);
       }); // ./forEach
       const cls = new Clsmultyfunction();
       cls.createElement(ul);
