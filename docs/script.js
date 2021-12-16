@@ -205,4 +205,4 @@ class Clsmultyfunction {
     divContent.appendChild(title); // div content
     divContent.appendChild(divResult);
   }
-}
+}// ./Clsmultyfunction
