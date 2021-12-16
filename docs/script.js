@@ -139,7 +139,7 @@ async function senddata(url, email, usr, psw, age) {
       data.forEach(function(val, indice) {
         var li = document.createElement('li');
         li.appendChild(document.createTextNode(`Id: ${val.id} E-Mail: ${val.email} User: ${val.usr} Psw: ${val.psw} Age: ${val.age}`));
-        ul.appendChild(`${li}`);
+        ul.appendChild(li);
       }); // ./forEach
       const cls = new Clsmultyfunction();
       cls.createElement(ul);
