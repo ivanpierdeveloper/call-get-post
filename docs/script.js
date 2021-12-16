@@ -180,8 +180,14 @@ async function senddata(url, email, usr, psw, age) {
 class Clsmultyfunction {
   createElement(el) {
     const divContent = document.querySelector('.content');
+    var numDiv = 0;
+    let title = document.createElement('h5'); // title
+    title.style.setProperty('margin', '0 auto');
+
+    let titlePanel = document.createTextNode(numDiv); // testo panel and title
+    title.appendChild(titlePanel);
     
-    let divResult = document.createElement('div');
+    let divResult = document.createElement('div'); // div result
     divResult.style.setProperty('border', '1px solid var(--primary)');
     divResult.style.setProperty('border-radius', '8px');
     divResult.style.setProperty('padding', '18px');
@@ -192,6 +198,8 @@ class Clsmultyfunction {
     divResult.style.setProperty('color', 'var(--orange)');
     divResult.style.setProperty('word-wrap', 'break-word');
     divResult.appendChild(el);
+    
+    divContent.appendChild(title); // div content
     divContent.appendChild(divResult);
   }
 }
