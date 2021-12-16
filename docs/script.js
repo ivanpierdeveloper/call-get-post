@@ -136,26 +136,26 @@ async function senddata(url, email, usr, psw, age) {
       console.table(data);
       
       var ul = document.createElement('ul');
-      var hr      = document.createElement('hr');
+      
       data.forEach(function(val, indice) {
         var liId    = document.createElement('li');
         var liEmail = document.createElement('li');
         var liUsr   = document.createElement('li');
         var liPsw   = document.createElement('li');
         var liAge   = document.createElement('li');
-        
-        liId.append(document.createTextNode(`id: ${val.id}`));
-        liEmail.append(document.createTextNode(`e-mail: ${val.email}`));
-        liUsr.append(document.createTextNode(`usr: ${val.usr}`));
-        liPsw.append(document.createTextNode(`psw: ${val.psw}`));
-        liAge.append(document.createTextNode(`age: ${val.age}`));
-        
-        ul.append(liId);
-        ul.append(liEmail);
-        ul.append(liUsr);
-        ul.append(liPsw);
-        ul.append(liAge);
-        ul.append(hr);
+        var hr      = document.createElement('hr');
+        liId.appendChild(document.createTextNode(`id: ${val.id}`));
+        liEmail.appendChild(document.createTextNode(`e-mail: ${val.email}`));
+        liUsr.appendChild(document.createTextNode(`usr: ${val.usr}`));
+        liPsw.appendChild(document.createTextNode(`psw: ${val.psw}`));
+        liAge.appendChild(document.createTextNode(`age: ${val.age}`));
+
+        ul.appendChild(liId);
+        ul.appendChild(liEmail);
+        ul.appendChild(liUsr);
+        ul.appendChild(liPsw);
+        ul.appendChild(liAge);
+        ul.appendChild(hr);
       }); // ./forEach
       const cls = new Clsmultyfunction();
       cls.createElement(ul);
@@ -191,7 +191,7 @@ class Clsmultyfunction {
     divResult.style.setProperty('position', 'relative');
     divResult.style.setProperty('top', '10px');
     divResult.style.setProperty('color', 'var(--giallo)');
-    divResult.append(el);
-    divContent.append(divResult);
+    divResult.appendChild(el);
+    divContent.appendChild(divResult);
   }
 }
