@@ -133,9 +133,18 @@ async function senddata(url, email, usr, psw, age) {
       }
     })
     .then( (data) => {
-      var stampa = document.querySelector('.stampa');
-
       console.table(data);
+      
+      var ul = document.createElement('ul');
+      var li = document.createElement('li');
+      var testo = document.createTextNode();
+      data.forEach(function(val, indice) {
+        testo.appendChild(val);
+        li.appendChild(testo);
+        ul.appendChild(li);
+      }); // ./forEach
+      const cls = new Clsmultyfunction();
+      cls.createElement(ul);
     })
     .catch( (err) => {
       //console.error(`Codice Errore: ${err.status} Messaggio Errore: ${err.statuText}`);
@@ -155,7 +164,7 @@ async function senddata(url, email, usr, psw, age) {
   }
 } // ./senddata
 class Clsmultyfunction {
-  createElement() {
+  createElement(el) {
     const divContent = document.querySelector('.content');
     
     let divResult = document.createElement('div');
@@ -165,9 +174,9 @@ class Clsmultyfunction {
     divResult.style.setProperty('width', 'auto');
     divResult.style.setProperty('height', 'auto');
     divResult.style.setProperty('margin', '0 auto');
-
+    divResult.style.setProperty('position', 'relative');
+    divResult.style.setProperty('top', '10px');
+    divResult.append(el);
     divContent.appendChild(divResult);
   }
 }
-const cls = new Clsmultyfunction();
-cls.createElement();
