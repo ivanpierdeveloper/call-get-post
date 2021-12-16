@@ -190,6 +190,7 @@ class Clsmultyfunction {
     divResult.style.setProperty('margin', '0 auto');
     divResult.style.setProperty('margin-top', '10px');
     divResult.style.setProperty('color', 'var(--orange)');
+    divResult.style.setProperty('word-wrap', 'break-word');
     divResult.appendChild(el);
     divContent.appendChild(divResult);
   }
