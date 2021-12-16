@@ -181,6 +181,7 @@ class Clsmultyfunction {
   createElement(el) {
     const divContent = document.querySelector('.content');
     var numDiv = 0;
+    numDiv += 1;
     let title = document.createElement('h5'); // title
     title.style.setProperty('margin', '0 auto');
 
