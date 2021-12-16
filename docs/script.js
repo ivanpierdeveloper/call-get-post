@@ -177,15 +177,15 @@ async function senddata(url, email, usr, psw, age) {
       myFunc.showAlert(`errore exception: ${Exception.message}`, "var(--danger)", "var(--dark)", "var(--orange)");
   }
 } // ./senddata
+var numDiv = 0;
 class Clsmultyfunction {
   createElement(el) {
     const divContent = document.querySelector('.content');
-
-    var numDiv = 0;
     numDiv += 1;
-    
+
     let title = document.createElement('h5'); // title
-    title.style.setProperty('margin', '0 auto');
+    title.style.setProperty('text-aling', 'center');
+    title.style.setProperty('color', 'var(--yellow');
 
     let titlePanel = document.createTextNode(numDiv); // testo panel and title
     title.appendChild(titlePanel);
