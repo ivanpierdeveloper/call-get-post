@@ -37,6 +37,7 @@
         position: fixed; left: 0; top: 0;
         z-index: 1;
         display: none;
+        filter: alpha(opacity=50);
       }
       .my-alert {
         width: 45vw;
@@ -69,10 +70,7 @@
     </style>
   </head>
   <body>
-    <!-- full screen-->
-    <div class="full-screen"></div>
-    <!-- full screen-->
-    <!-- my alert -->
+    <div class="full-screen"></div><!-- ./full screen-->
     <div class="my-alert">
       <div class="img-close crs-pointer">
         <img src="img/close.png" width="25" height="25" />
@@ -80,8 +78,7 @@
       <h3>avviso</h3>
       <hr />
       <span class="my-alert-testo"></span>
-    </div>
-    <!-- my alert -->
+    </div><!-- ./my alert -->
     <div class="container">
       <h1 class="root-text-color-orange root-text-align-center">WelCome Get And Post Testing</h1>
       <hr />
@@ -107,8 +104,9 @@
           <span class="root-text-color-danger span-4" id="span_age">campo obbligatorio</span>
           <button class="btn btn-s crs-pointer btn-send-form">invia dati</button>
         </form>
-      </div>
-    </div>
+      </div><!-- ./content -->
+      <div class="stampa"></div>
+    </div><!-- ./container -->
      <!-- lib google ajax -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="docs/script.js"></script>

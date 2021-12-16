@@ -117,7 +117,7 @@ async function senddata(url, email, usr, psw, age) {
         //headers.append('Content-Type', 'text/json', 'Access-Control-Allow-Origin'); // Controllo di accesso Consenti all'origine
     const request = new Request(url, {
       method: 'POST',
-      //mode: 'cors',
+      // mode: 'cors',
       // headers: headers,
       body: formData
     });
@@ -133,6 +133,8 @@ async function senddata(url, email, usr, psw, age) {
       }
     })
     .then( (data) => {
+      var stampa = document.querySelector('.stampa');
+      
       console.table(data);
     })
     .catch( (err) => {
