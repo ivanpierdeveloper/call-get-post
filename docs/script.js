@@ -181,8 +181,8 @@ var numDiv = 0;
 class Clsmultyfunction {
   createElement(el) {
     const divContent = document.querySelector('.content');
-    numDiv += 1;
 
+    numDiv += 1;
     let title = document.createElement('h5'); // title
     title.style.setProperty('text-aling', 'center');
     title.style.setProperty('color', 'var(--yellow');
