@@ -714,8 +714,8 @@ btnZip.addEventListener('click', async function() {
     headers.append('Content-Type', 'application/json');
     let request = new Request('docs/page/zip.php', {
         method: "POST",
-        //headers: headers,
-        mode: 'cors',
+        // headers: headers,
+        // mode: 'cors',
         body: frmData
     });
     await fetch(request)
