@@ -46,7 +46,7 @@ app per testare le chiamate GET &amp; POST
 
 ## FINE ##
 
-<img src="img/screenshot.png" width="1000" height="700" alt="Immagine non disponibile" />
+<img src="img/screen-shot.png" width="1000" height="700" alt="Immagine non disponibile" />
 <br />
 <a href="https://ivanpierdeveloper.github.io/call-get-post/">Vai all'APP ^__^</a>
 
