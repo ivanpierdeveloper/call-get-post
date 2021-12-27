@@ -44,10 +44,10 @@ app per testare le chiamate GET &amp; POST
     <li>? ></li>
 </ul>
 
-## FINE ##
-
 <img src="img/screen-shot.png" width="1000" height="700" alt="Immagine non disponibile" />
 <br />
 <a href="https://ivanpierdeveloper.github.io/call-get-post/" target="_blank">Vai all'APP ^__^</a>
 
 <!-- <img src="https://cdn.shopify.com/s/files/1/0104/7583/1377/products/GOH72169.001_1_1200x1200.jpg?v=1616437645" /> -->
+
+## FINE ##
