@@ -50,5 +50,6 @@ app per testare le chiamate GET &amp; POST
 
 <!-- <img src="https://cdn.shopify.com/s/files/1/0104/7583/1377/products/GOH72169.001_1_1200x1200.jpg?v=1616437645" /> -->
 
-<p>NOTA: Se non dovesse funzionare, controllare di aver scritto correttamente l'url, consentire contenuti misti (es. http https (disabilitando il lucchetto nella barra degli indirizzi web)) e per ultimo ma non per questo meno importatnte verificare CORS. Quest'ultimo si risolve installando un addons di FireFox <a href="https://addons.mozilla.org/it/firefox/addon/cors-everywhere/">installa(CORS)</a>. buon lavoro.</p>
+<p>NOTA: Se non dovesse funzionare, controllare di aver scritto correttamente l'url, consentire contenuti misti (es. http https (disabilitando il lucchetto nella barra degli indirizzi)) e per ultimo ma non per questo meno importatnte verificare CORS. Quest'ultimo si risolve installando un addons di FireFox <a href="https://addons.mozilla.org/it/firefox/addon/cors-everywhere/">installa(CORS)</a>. buon lavoro.</p>
+
 ## FINE ##
