@@ -100,7 +100,7 @@ async function fetchApi(url, email, usr, psw, age) {
     const request = new Request(url, {
         method: 'POST',
         // headers: headers,
-        mode: 'cors',
+        // mode: 'cors',
         body: frmData
     });
     await fetch(request)
