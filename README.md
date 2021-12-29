@@ -4,11 +4,10 @@
 
 app per testare le chiamate GET &amp; POST
 <br />
- => ESEMPIO DI COME SCRIVERE LA PAGINA CHE RICEVE LE CHIAMATE GET E POST:
-<br />
 
 ## INIZIO ##
 
+=> ESEMPIO DI COME SCRIVERE LE PAGINE CHE RICEVONO LE CHIAMATE GET O POST:
 <p><a href="docs/pages/js.php">scarica file-1</a></p>
 <p><a href="docs/pages/get2.php">scarica file-2</a></p>
 
