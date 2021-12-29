@@ -12,7 +12,7 @@ app per testare le chiamate GET &amp; POST
 <p><a href="docs/page/js.php">scarica file-1</a></p>
 <p><a href="docs/page/get2.php">scarica file-2</a></p>
 
-<img src="img/screen-shot.png" width="700" height="700" alt="Immagine non disponibile" />
+<img src="img/screen-shot.png" width="1000" height="500" alt="Immagine non disponibile" />
 <br />
 <a href="https://ivanpierdeveloper.github.io/call-get-post/" target="_blank">Vai all'APP ^__^</a>
 
