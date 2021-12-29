@@ -9,40 +9,8 @@ app per testare le chiamate GET &amp; POST
 
 ## INIZIO ##
 
-< ? php
-<ul>
-    <li>header('Access-Control-Allow-Origin: *'); // IMPORTANTE CORS “Access-Control-Allow-Origin” mancante</li>
-    <li>header ("Access-Control-Expose-Headers: Content-Length, X-JSON");</li>
-    <li>header ("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS");</li>
-    <li>header ("Access-Control-Allow-Headers: Content-Type, Authorization, Accept, Accept-Language, X-Authorization");</li>
-    <li>header('Access-Control-Max-Age: 86400');</li>
-    <li>header('Content-Type: application/json; charset=UTF-8');</li>
- </ul>
- <ul>
-    <li>echo '[{</li>
-            <li>"id": 101,</li>
-            <li>"email" : "mariorossi@gmail.com",</li>
-            <li>"usr": "Mario Rossi",</li>
-            <li>"psw": "'.sha1("oxnde7n39").'",</li>
-            <li>"age": 22</li>
-        <li>},</li>
-        <li>{</li>
-            <li>"id": 102,</li>
-            <li>"email" : "mariobianchi@gmail.com",</li>
-            <li>"usr": "Mario Bianchi",</li>
-            <li>"psw": "'.sha1("123abc").'",</li>
-            <li>"age": 25</li>
-        <li>},</li>
-        <li>{</li>
-            <li>"id" : "'.$_POST['id'].'",</li>
-            <li>"email" : "'.$_POST['email'].'",</li>
-            <li>"usr": "'.$_POST['usr'].'",</li>
-            <li>"psw": "'.sha1($_POST['psw']).'",</li>
-            <li>"age": "'.$_POST['age'].'"</li>
-        <li>}</li>
-    <li>]';
-    <li>? ></li>
-</ul>
+<a href="docs/page/js.php">scarica file-1</a>
+<a href="docs/page/get2.php">scarica file-2</a>
 
 <img src="img/screen-shot.png" width="1000" height="700" alt="Immagine non disponibile" />
 <br />
