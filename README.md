@@ -9,8 +9,8 @@ app per testare le chiamate GET &amp; POST
 
 ## INIZIO ##
 
-<p><a href="docs/page/js.php">scarica file-1</a></p>
-<p><a href="docs/page/get2.php">scarica file-2</a></p>
+<p><a href="docs/pages/js.php">scarica file-1</a></p>
+<p><a href="docs/pages/get2.php">scarica file-2</a></p>
 
 <img src="img/screen-shot.png" width="1000" height="500" alt="Immagine non disponibile" />
 <br />
