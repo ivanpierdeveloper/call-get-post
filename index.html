@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<html lang="it">
+
+<head>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'none' ; script-src resource:; "> -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="IT">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dati utente">
+    <meta name="author" content="https://ivanpierdeveloper.it">
+    <meta name="keywords" content="app, call, get, post, call get post">
+    <link rel="shortcut icon" href="img/favicon-radius-8px-50.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="docs/css/root.css">
+    <link rel="stylesheet" type="text/css" href="docs/css/my-alert.css">
+    <link rel="stylesheet" href="docs/css/style.css">
+    <link rel="stylesheet" type="text/css" href="docs/css/tooltip.css">
+    <title>Home | Call get and post</title>
+    <style type="text/css">
+        table {
+            table-layout: fixed;
+            width: 100%;
+            word-wrap: break-word;
+            height: auto;
+            color: var(--yellow);
+        }
+        
+        table caption {
+            color: var(--white);
+            text-align: center;
+        }
+        
+        table th {
+            border: 1px solid var(--danger);
+        }
+        
+        table td {
+            border: 1px solid var(--orange);
+            text-align: center;
+            font-size: 8pt;
+        }
+        
+        .tooltip {
+            width: 25%;
+        }
+        
+        .tooltip button {
+            width: 100%;
+        }
+        
+        .tooltip span {
+            font-size: 8pt;
+            padding: 18px;
+        }
+        
+        input[type=file] {
+            opacity: 0;
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        
+        img {
+            cursor: pointer;
+            border-radius: 100px;
+        }
+        
+        .path_folder_image {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full-screen"></div>
+    <!-- ./full-screen -->
+    <div class="my-alert"></div>
+    <!-- ./my-alert -->
+    <div class="loader"></div>
+    <!-- loader-->
+    <div class="loader-text"></div>
+    <!-- loader-text -->
+    <div class="container">
+        <h1 class="root-text-indianred root-text-align-center root-text-color-blue">CALL GET & POST</h1>
+        <hr />
+        <p>
+            <span class="root-text-color-secondary">carica avatar</span>
+            <br />
+            <div class="tooltip">
+                <span class="tooltiptext">anteprima avatar</span>
+                <img src="img/avatar/default.png" class="img-avatar" alt="image avatar" width="80" height="80" title="anteprima">
+            </div>
+            <span class="span-avatar root-text-color-indianred"></span>
+            <br />
+            <span class="root-text-color-secondary">attiva solo con il method post (avatar)</span>
+            <!-- add attribute multiple -->
+            <input type="file" id="avatar" name="avatar" class="file-avatar" accept="image/*">
+            <!-- multiple> -->
+        </p>
+        <select class="select-c slc-type-method">
+            <optgroup label="seleziona tipo di metodo">
+                <option value="get">method -> get</option>
+                <option value="post" selected>method -> post</option>
+            </optgroup>
+        </select>
+        <input type="url" id="path_folder_image" name="path_folder_image" class="path_folder_image" placeholder="percorso cartella dove salvi le immagini es.(https://ivanpier.it/docs/avatar/)" value="http://svilfi.utile.extranet.utilita.com/webserver/php/test/github/call-get-post/">
+        <form class="frm-dati" name="frm_dati" id="frm_dati">
+            <input type="url" class="url txt-input" name="url" id="url" placeholder="url a cui effettuare la chiamata">
+            <span class="span-0 root-text-color-indianred"></span>
+            <input type="email" class="email txt-input" name="email" id="email" placeholder="e-mail">
+            <span class="span-1 root-text-color-indianred"></span>
+            <input type="text" class="usr txt-input" name="usr" id="usr" placeholder="username">
+            <span class="span-2 root-text-color-indianred"></span>
+            <input type="password" class="psw txt-input" name="psw" id="psw" placeholder="password">
+            <span class="span-3 root-text-color-indianred"></span>
+            <input type="number" class="age txt-input" name="age" id="age" placeholder="age">
+            <span class="span-4 root-text-color-indianred"></span>
+            <div class="tooltip">
+                <button type="button" class="btn btn-p add-data">aggiungi</button>
+                <span class="tooltiptext root-display-block">dati all'array</span>
+            </div>
+            <div class="tooltip">
+                <button type="submit" class="btn btn-s btn-send-data">invia</button>
+                <span class="tooltiptext root-display-block">dati alla pagina</span>
+            </div>
+            <div class="tooltip">
+                <button type="button" class="btn btn-i btn-reload">ricarica</button>
+                <span class="tooltiptext root-display-block">pagina</span>
+            </div>
+    </div>
+    </form>
+    </div>
+    <!-- ./container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <!-- ./lib google ajax -->
+    <script lang="javascript" src="docs/js/my-alert.js" defer></script>
+    <!-- my-alert js -->
+    <!-- (defer) non accesso dall'esterno -->
+    <script lang="javascript" src="docs/js/script.js" defer></script>
+    <!-- script js -->
+    <script lang="javascript">
+    </script>
+</body>
+
+</html>
