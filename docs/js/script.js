@@ -362,7 +362,7 @@ function createDiv(data) {
 
 async function compile() {
     const form = document.querySelector('form');
-    form[0].value = "http://svilfi.utile.extranet.utilita.com/webserver/php/test/github/call-get-post/docs/pages/js.php";
+    form[0].value = "you url";
     form[1].value = "ivanpier@gmail.com";
     form[2].value = "ivanpier";
     form[3].value = "pass";
