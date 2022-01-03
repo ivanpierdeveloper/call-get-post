@@ -1,0 +1,1 @@
+Non eliminare il file default.png da questa cartella.
